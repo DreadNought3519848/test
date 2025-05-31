@@ -42,9 +42,13 @@ body{
 /*メイン*/
 #Main{
   width: fit-content;
-  margin: 300px auto;
+  margin: 150px auto;
 }
 
 #list{
   margin-top: 150px;
+}
+
+#list a{
+  font-size: 24px;
 }
