@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*全体*/
+body{
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ヘッダーメニュー */
+#HeaderMenu ul {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px; /* ← 項目の間にスペース */
+  padding: 0;
+  margin: 0;
+}
+
+#HeaderMenu li {
+  list-style: none;
+  position: relative;
+  padding: 0 15px;
+}
+
+/* ↓ 境界線（縦線）をli要素の右側に追加 */
+#HeaderMenu li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -270px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 2px;
+  background-color:black; /* ← 線の色（好みに応じて） */
+}
+
+#HeaderMenu a{
+  text-decoration: none;
+}
+
+/*メイン*/
