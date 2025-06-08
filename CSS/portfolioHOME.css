@@ -35,8 +35,14 @@ body{
   background-color:black; /* ← 線の色（好みに応じて） */
 }
 
-#HeaderMenu a{
+.Menu{
   text-decoration: none;
+  padding: 4px; /* 枠が出た時のズレ防止に */
+  transition: border 0.15s ease; /* アニメーションをつける */
+}
+
+.Menu:hover{
+  border-bottom: 3px solid black;
 }
 
 /*メイン*/
