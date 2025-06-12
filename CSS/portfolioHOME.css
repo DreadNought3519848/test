@@ -24,6 +24,10 @@ body{
   translate: 0 100vh;
 }
 
+#Loading p{
+  font-size: 2rem;
+}
+
 
 /* ヘッダーメニュー */
 #HeaderMenu ul {
